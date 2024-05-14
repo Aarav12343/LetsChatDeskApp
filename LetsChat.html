@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <title>ChatRoom</title>
+    <style>
+    body{
+        text-align: right;
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        background-color: rgb(2, 117, 216)
+    }
+
+    h1{
+        color: white;
+    }
+
+    h2{
+        color: white;
+    }
+    </style>
+   <script src = "Room.js"></script>`
+</head>
+<body >
+    <center>
+        <h1 id = "title" class = "Colour">ChatRoom</h1>
+        <h2 id = "username"></h2>
+    </center>
+    
+    <button class="glyphicon glyphicon-log-out btn btn-primary " id = "logout" onclick = "Logout()"></button>
+<center>
+    <h3 class = "Colour" id = "username"></h1>
+        <div class = "form-group input_div_room_page">
+    <label>Add Room:</label><br>
+    <input type = "text" id = "room_name" class ="form_control color_white" placeholder = "Room Name">
+    </div>
+    <button class = "btn btn-primary" id = "AddRoom" onclick = "addRoom()">Add Room</button>
+    <h2 id = "Rooms" class = "Colour">Joinable Rooms</h2>
+</center>
+    
+    
+    
+</body>
+</html>
